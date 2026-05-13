@@ -137,13 +137,6 @@ export default function Footer() {
               </li>
             </ul>
 
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-1.5 mt-8 text-sm font-semibold transition-colors hover:opacity-80"
-              style={{ color: '#E8733A' }}
-            >
-              Get an Estimate →
-            </Link>
           </div>
 
           {/* Column 3 — Social */}
@@ -264,7 +257,7 @@ export default function Footer() {
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         aria-label="Back to top"
-        className="fixed bottom-6 right-6 w-11 h-11 rounded-full flex items-center justify-center text-white z-50 transition-all duration-300"
+        className="fixed bottom-6 left-6 w-11 h-11 rounded-full flex items-center justify-center text-white z-50 transition-all duration-300"
         style={{
           background: showTop ? '#E8733A' : 'rgba(27,42,74,0.80)',
           boxShadow: showTop ? '0 0 20px rgba(232,115,58,0.45)' : '0 2px 12px rgba(0,0,0,0.30)',

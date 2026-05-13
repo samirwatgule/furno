@@ -8,6 +8,7 @@ import { CardSkeleton } from '../ui/Skeleton';
 
 export default function Magazine() {
   const { data: articles, loading } = useApi(api.getArticles, fallbackArticles);
+  const MotionLink = motion.create(Link);
 
   return (
     <section className="py-10 sm:py-14 bg-gray-50">
@@ -23,7 +24,7 @@ export default function Magazine() {
               Find everything from design fixes to expert tips on Furno magazine
             </h2>
           </div>
-          <Link to="/magazine" className="inline-flex items-center gap-1 text-navy text-sm font-semibold hover:gap-2 transition-all border border-navy px-5 py-2 rounded-lg hover:bg-navy hover:text-white flex-shrink-0">
+          <Link to="/design-ideas" className="inline-flex items-center gap-1 text-navy text-sm font-semibold hover:gap-2 transition-all border border-navy px-5 py-2 rounded-lg hover:bg-navy hover:text-white flex-shrink-0">
             See More <HiArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
@@ -35,9 +36,9 @@ export default function Magazine() {
         ) : (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {(articles || []).map((article, i) => (
-              <motion.a
+              <MotionLink
                 key={article.id}
-                href="#"
+                to="/design-ideas"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -65,7 +66,7 @@ export default function Magazine() {
                     <span>{article.date}</span>
                   </div>
                 </div>
-              </motion.a>
+              </MotionLink>
             ))}
           </div>
         )}

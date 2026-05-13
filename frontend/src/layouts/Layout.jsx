@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
+import FloatingChat from '../components/FloatingChat/FloatingChat';
 
 export default function Layout() {
   const location = useLocation();
@@ -33,6 +34,7 @@ export default function Layout() {
         </motion.main>
       </AnimatePresence>
       <Footer />
+      <FloatingChat />
     </div>
   );
 }

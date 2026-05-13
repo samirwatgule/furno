@@ -8,6 +8,7 @@ const DesignIdeas = lazy(() => import('./pages/DesignIdeas'));
 const DesignCategoryPage = lazy(() => import('./pages/DesignCategoryPage'));
 const DesignDetailPage = lazy(() => import('./pages/DesignDetailPage'));
 const Projects = lazy(() => import('./pages/Projects'));
+const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage'));
 const StoreLocator = lazy(() => import('./pages/StoreLocator'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/design-ideas/:categorySlug" element={<DesignCategoryPage />} />
           <Route path="/design-ideas/:categorySlug/:designId" element={<DesignDetailPage />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:projectId" element={<ProjectDetailPage />} />
           <Route path="/stores" element={<StoreLocator />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

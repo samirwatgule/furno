@@ -1,15 +1,15 @@
 import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
-  HiHome, HiLocationMarker, HiUserGroup, HiStar,
-  HiShieldCheck, HiClock, HiCheckCircle,
+  HiUserGroup, HiStar,
+  HiShieldCheck, HiClock, HiCheckCircle, HiCube,
 } from 'react-icons/hi';
 
 const COUNTER_STATS = [
-  { Icon: HiHome,         label: 'Happy Homes',      end: 100000, display: '1,00,000+' },
-  { Icon: HiLocationMarker, label: 'Cities Served',  end: 50,     display: '50+'       },
-  { Icon: HiUserGroup,    label: 'Expert Designers',  end: 150,    display: '150+'      },
-  { Icon: HiStar,         label: 'Awards Won',        end: 25,     display: '25+'       },
+  { Icon: HiCube,        label: 'Products in Catalogue', end: 750,  display: '750+',  suffix: '+' },
+  { Icon: HiClock,       label: 'Day Move-in Guarantee', end: 45,   display: '45',    suffix: ' Days' },
+  { Icon: HiUserGroup,   label: 'Expert Designers',      end: 50,   display: '50+',   suffix: '+' },
+  { Icon: HiCheckCircle, label: 'Quality Checks',        end: 146,  display: '146',   suffix: '' },
 ];
 
 const SKILLS = [
@@ -34,12 +34,9 @@ function useCountUp(target, active, duration = 1600) {
   return count;
 }
 
-function CounterItem({ Icon, label, end, display, active }) {
+function CounterItem({ Icon, label, end, display, suffix, active }) {
   const count = useCountUp(end, active);
-  const formatted =
-    end >= 1000
-      ? count.toLocaleString('en-IN') + '+'
-      : count + '+';
+  const formatted = count.toLocaleString('en-IN') + (suffix ?? '+');
 
   return (
     <div className="flex items-center gap-4 px-6 sm:px-8 py-6">

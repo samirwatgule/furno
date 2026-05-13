@@ -611,15 +611,96 @@ export const footerData = {
 
 // ---------- PROJECTS ----------
 export const projects = [
-  { id: 1, title: 'Modern 4 BHK with Custom Cabinetry', city: 'Bangalore', bhk: '4 BHK', area: '2400 sq.ft', budget: '₹35L', style: 'Contemporary', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80' },
-  { id: 2, title: 'Compact 2 BHK Flat with Smart Storage', city: 'Mumbai', bhk: '2 BHK', area: '850 sq.ft', budget: '₹12L', style: 'Modern', image: 'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=600&q=80' },
-  { id: 3, title: 'Elegant 3 BHK with Walk-in Wardrobes', city: 'Delhi', bhk: '3 BHK', area: '1800 sq.ft', budget: '₹22L', style: 'Classic', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80' },
-  { id: 4, title: 'Scandinavian 3 BHK Apartment', city: 'Hyderabad', bhk: '3 BHK', area: '1600 sq.ft', budget: '₹18L', style: 'Scandinavian', image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80' },
-  { id: 5, title: 'Luxury Villa with Custom Interiors', city: 'Gurgaon', bhk: '5 BHK', area: '4500 sq.ft', budget: '₹75L', style: 'Luxury', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80' },
-  { id: 6, title: 'Minimalist 2 BHK with Open Kitchen', city: 'Pune', bhk: '2 BHK', area: '950 sq.ft', budget: '₹10L', style: 'Minimalist', image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80' },
-  { id: 7, title: 'Traditional 3 BHK with Pooja Room', city: 'Chennai', bhk: '3 BHK', area: '1500 sq.ft', budget: '₹16L', style: 'Indian Traditional', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80' },
-  { id: 8, title: 'Industrial Loft-Style Studio Apartment', city: 'Bangalore', bhk: '1 BHK', area: '650 sq.ft', budget: '₹8L', style: 'Industrial', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80' },
-  { id: 9, title: 'Art Deco 4 BHK with Statement Lighting', city: 'Mumbai', bhk: '4 BHK', area: '2200 sq.ft', budget: '₹45L', style: 'Art Deco', image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80' },
+  {
+    id: 1, title: 'Modern 4 BHK with Custom Cabinetry', city: 'Bangalore', bhk: '4 BHK', area: '2400 sq.ft', budget: '₹35L', style: 'Contemporary',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+      'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80',
+    ],
+  },
+  {
+    id: 2, title: 'Compact 2 BHK Flat with Smart Storage', city: 'Mumbai', bhk: '2 BHK', area: '850 sq.ft', budget: '₹12L', style: 'Modern',
+    image: 'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80',
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80',
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80',
+    ],
+  },
+  {
+    id: 3, title: 'Elegant 3 BHK with Walk-in Wardrobes', city: 'Delhi', bhk: '3 BHK', area: '1800 sq.ft', budget: '₹22L', style: 'Classic',
+    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
+      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
+    ],
+  },
+  {
+    id: 4, title: 'Scandinavian 3 BHK Apartment', city: 'Hyderabad', bhk: '3 BHK', area: '1600 sq.ft', budget: '₹18L', style: 'Scandinavian',
+    image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80',
+      'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
+    ],
+  },
+  {
+    id: 5, title: 'Luxury Villa with Custom Interiors', city: 'Gurgaon', bhk: '5 BHK', area: '4500 sq.ft', budget: '₹75L', style: 'Luxury',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
+      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80',
+    ],
+  },
+  {
+    id: 6, title: 'Minimalist 2 BHK with Open Kitchen', city: 'Pune', bhk: '2 BHK', area: '950 sq.ft', budget: '₹10L', style: 'Minimalist',
+    image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80',
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80',
+      'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1200&q=80',
+    ],
+  },
+  {
+    id: 7, title: 'Traditional 3 BHK with Pooja Room', city: 'Chennai', bhk: '3 BHK', area: '1500 sq.ft', budget: '₹16L', style: 'Indian Traditional',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80',
+      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80',
+    ],
+  },
+  {
+    id: 8, title: 'Industrial Loft-Style Studio Apartment', city: 'Bangalore', bhk: '1 BHK', area: '650 sq.ft', budget: '₹8L', style: 'Industrial',
+    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80',
+      'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
+    ],
+  },
+  {
+    id: 9, title: 'Art Deco 4 BHK with Statement Lighting', city: 'Mumbai', bhk: '4 BHK', area: '2200 sq.ft', budget: '₹45L', style: 'Art Deco',
+    image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80',
+    images: [
+      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80',
+      'https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+    ],
+  },
 ];
 
 // ---------- DESIGNS ----------

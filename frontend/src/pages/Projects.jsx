@@ -271,11 +271,13 @@ export default function Projects() {
 
                       {/* Hover overlay — View Project only */}
                       <div className={`absolute bottom-0 left-0 right-0 p-4 transition-all duration-300 ${hoveredCard === project.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                        <button
+                        <MotionLink
+                          to={`/projects/${project.id}`}
                           className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-white text-[11px] font-bold uppercase tracking-wide"
-                          style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.25)' }}>
+                          style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.25)' }}
+                        >
                           <FaEye className="w-3 h-3" /> View Project
-                        </button>
+                        </MotionLink>
                       </div>
                     </div>
 
